@@ -40,7 +40,7 @@ determines the type of medals to sort by. It can have one of the following value
 Note the tiebreak between Netherlands and Germany is handled by total silver.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Gold.jpg" height="600" width="600"
+    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Gold.jpg" height="600" width="570"
          alt="Sort by Gold">
 </figure>
 
@@ -48,7 +48,7 @@ Note the tiebreak between Netherlands and Germany is handled by total silver.
 Note the tiebreak between France and Sweden is handled by the total gold.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Total.jpg" height="600" width="600"
+    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Total.jpg" height="600" width="570"
          alt="Sort by Total">
 </figure>
 
@@ -56,7 +56,7 @@ Note the tiebreak between France and Sweden is handled by the total gold.
 Note the tiebreak between USA, Netherlands and Sweden is handled by the total gold.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Silver.jpg" height="600" width="600"
+    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Silver.jpg" height="600" width="570"
          alt="Sort by Silver">
 </figure>
 
@@ -64,7 +64,7 @@ Note the tiebreak between USA, Netherlands and Sweden is handled by the total go
 Note the tiebreak between Russia and Netherlands is handled by total gold.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Bronze.jpg" height="600" width="600"
+    <img src="https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Bronze.jpg" height="600" width="570"
          alt="Sort by Bronze">
 </figure>
 
