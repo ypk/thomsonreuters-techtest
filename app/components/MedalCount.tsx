@@ -1,13 +1,63 @@
 'use client';
-import { Container } from './ui/Container';
 
 export function MedalCount() {
   return (
-    <Container>
-      <h1 className="text-2xl font-light text-gray-400 mb-6 tracking-wide">
-        MEDAL COUNT
-      </h1>
-      <p>This is from Medal Count Component</p>
-    </Container>
+    <div>
+      <h1>MEDAL COUNT</h1>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Gold</th>
+            <th>Silver</th>
+            <th>Bronze</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>USA</td>
+            <td>9</td>
+            <td>7</td>
+            <td>12</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>RUS</td>
+            <td>13</td>
+            <td>11</td>
+            <td>9</td>
+            <td>33</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>NOR</td>
+            <td>11</td>
+            <td>5</td>
+            <td>10</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>CAN</td>
+            <td>10</td>
+            <td>10</td>
+            <td>5</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>NED</td>
+            <td>8</td>
+            <td>7</td>
+            <td>9</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 }
