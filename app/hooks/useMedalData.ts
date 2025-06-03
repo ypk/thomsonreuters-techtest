@@ -1,3 +1,11 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { CountryWithTotal, SortType } from '@/app/types/medal';
+import { medalService } from '@/app/services/medalService';
+import { sortingService } from '@/app/services/sortingService';
+import { TOP_COUNTRIES_LIMIT } from '@/app/constants';
+
 /**
  * Custom hook to fetch and manage medal data for top countries.
  *
@@ -8,19 +16,21 @@
  * - error: Error message if data fetching fails
  * - retry: Function to retry fetching medal data
  */
-'use client';
-
-import { useState, useEffect } from 'react';
-import { CountryWithTotal, SortType } from '@/app/types/medal';
-import { medalService } from '@/app/services/medalService';
-import { sortingService } from '@/app/services/sortingService';
-import { TOP_COUNTRIES_LIMIT } from '@/app/constants';
-
 export function useMedalData(sortType: SortType) {
   const [countries, setCountries] = useState<CountryWithTotal[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  /**
+   * Fetches and processes medal data for top countries.
+   *
+   * This async function retrieves raw medal data, calculates medal totals,
+   * sorts the data based on the specified sort type, and selects the top countries.
+   *
+   * @private
+   * @async
+   * @throws {Error} Throws an error if medal data fetching or processing fails
+   */
   const fetchData = async () => {
     try {
       setLoading(true);
@@ -44,6 +54,10 @@ export function useMedalData(sortType: SortType) {
     }
   };
 
+  /**
+   * Triggers initial data fetch when the component mounts or when sortType changes.
+   * Ensures medal data is loaded and updated based on the current sorting preference.
+   */
   useEffect(() => {
     fetchData();
   }, [sortType]);

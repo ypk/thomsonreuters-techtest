@@ -5,7 +5,7 @@ import { LoadingSpinner } from './components/ui/LoadingSpinner';
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Suspense fallback={<LoadingSpinner message="Loading data..." />}>
+      <Suspense fallback={<LoadingSpinner message="Loading medal data..." />}>
         <MedalCount />
       </Suspense>
     </main>

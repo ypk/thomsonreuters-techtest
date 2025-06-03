@@ -6,7 +6,7 @@ import { sortingService } from '../../app/services/sortingService';
 jest.mock('../../app/services/medalService');
 jest.mock('../../app/services/sortingService');
 
-const mockMedalService = medalService as jest.Mocked<typeof medallService>;
+const mockMedalService = medalService as jest.Mocked<typeof medalService>;
 const mockSortingService = sortingService as jest.Mocked<typeof sortingService>;
 
 describe('useMedalData', () => {
