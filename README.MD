@@ -3,10 +3,7 @@ Your assignment is to implement the **Medal Count App**, defined below, as if yo
 
 After submission of the test, if we feel it’s beneficial to your assessment, we’ll provide a Code Review where you will either be asked to make changes or respond with changes you would make based on the feedback.
 
-This test is meant to help us assess your ability to deliver __Production Ready__ code against a brief. We are especially interested to see how you choose to structure your code, your tooling choices, along with
-your ability to deliver against the brief. Concrete implementations are always our preference; however, we understand that you may not have the time to implement everything as you would prefer. __We ask
-that at minimum you deliver a working solution__. Anything you’re unable to implement, due to time constraints, we’d recommend you detail in writing. For anything you don’t deliver, as much as possible,
-explain the output you’d be looking to achieve along with your estimate of the time necessary to deliver.
+This test is meant to help us assess your ability to deliver __Production Ready__ code against a brief. We are especially interested to see how you choose to structure your code, your tooling choices, along with your ability to deliver against the brief. Concrete implementations are always our preference; however, we understand that you may not have the time to implement everything as you would prefer. __We ask that at minimum you deliver a working solution__. Anything you’re unable to implement, due to time constraints, we’d recommend you detail in writing. For anything you don’t deliver, as much as possible, explain the output you’d be looking to achieve along with your estimate of the time necessary to deliver.
 
 ## Medal Count Mini App
 The mini app is meant to display medal results during the Olympic games. The app shows up to 10 countries that have won the most medals of a given kind in the Olympics games.
@@ -42,11 +39,17 @@ determines the type of medals to sort by. It can have one of the following value
 #### Sort By Gold
 Note the tiebreak between Netherlands and Germany is handled by total silver.
 
+![enter image description here](https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Gold.jpg)
+
 #### Sort By Total
 Note the tiebreak between France and Sweden is handled by the total gold.
 
+![enter image description here](https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Total.jpg)
 #### Sort By Silver
 Note the tiebreak between USA, Netherlands and Sweden is handled by the total gold.
 
+![enter image description here](https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Silver.jpg)
 #### Sort By Bronze
 Note the tiebreak between Russia and Netherlands is handled by total gold.
+
+![enter image description here](https://raw.githubusercontent.com/ypk/thomsonreuters-techtest/refs/heads/master/images/Take%20Home%20Test%20-%20Medal%20Count%20Mini%20App-Bronze.jpg)
