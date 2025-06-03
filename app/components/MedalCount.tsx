@@ -6,14 +6,24 @@ import { MedalTable } from './MedalTable';
 import { ErrorMessage } from './ui/ErrorMessage';
 import { Container } from './ui/Container';
 
+/**
+ * Renders the Medal Count component, displaying a table of countries' medal counts.
+ *
+ * This component handles different states of medal data:
+ * - Displays an error message if data fetching fails
+ * - Shows a "No medal data available" message if no data exists
+ * - Renders a MedalTable with sortable country medal information when data is present
+ *
+ * @returns {JSX.Element} A rendered medal count view with appropriate state handling
+ */
 export function MedalCount() {
-  const { currentSort } = useUrlParams();
-  const { countries, loading, error } = useMedalData(currentSort);
+  const { currentSort, updateSort } = useUrlParams();
+  const { countries, loading, error, retry } = useMedalData(currentSort);
 
   if (error) {
     return (
       <div className="medal-app">
-        <ErrorMessage message={error} />
+        <ErrorMessage message={error} onRetry={retry} />
       </div>
     );
   }
@@ -33,7 +43,12 @@ export function MedalCount() {
 
   return (
     <div className="medal-app">
-      <MedalTable />
+      <MedalTable
+        countries={countries}
+        currentSort={currentSort}
+        onSortChange={updateSort}
+        loading={loading}
+      />
     </div>
   );
 }
