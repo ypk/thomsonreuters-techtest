@@ -2,6 +2,7 @@ import {
   COUNTRIES,
   FLAG_SIZE,
   TOP_COUNTRIES_LIMIT,
+  MEDAL_COLORS,
 } from '../../app/constants/index';
 
 describe('Constants Index', () => {
@@ -64,6 +65,29 @@ describe('Constants Index', () => {
 
     it('is less than total countries', () => {
       expect(TOP_COUNTRIES_LIMIT).toBeLessThan(COUNTRIES.length);
+    });
+  });
+
+  describe('MEDAL_COLORS', () => {
+    it('exports correct medal color structure', () => {
+      expect(MEDAL_COLORS).toHaveProperty('gold');
+      expect(MEDAL_COLORS).toHaveProperty('silver');
+      expect(MEDAL_COLORS).toHaveProperty('bronze');
+    });
+
+    it('uses correct Tailwind color classes for gold medal', () => {
+      expect(MEDAL_COLORS.gold.active).toBe('bg-yellow-500');
+      expect(MEDAL_COLORS.gold.inactive).toBe('bg-yellow-400');
+    });
+
+    it('uses correct Tailwind color classes for silver medal', () => {
+      expect(MEDAL_COLORS.silver.active).toBe('bg-gray-500');
+      expect(MEDAL_COLORS.silver.inactive).toBe('bg-gray-400');
+    });
+
+    it('uses correct Tailwind color classes for bronze medal', () => {
+      expect(MEDAL_COLORS.bronze.active).toBe('bg-yellow-900');
+      expect(MEDAL_COLORS.bronze.inactive).toBe('bg-yellow-800');
     });
   });
 });

@@ -21,3 +21,9 @@ export const FLAG_SIZE = {
 } as const;
 
 export const TOP_COUNTRIES_LIMIT = 10;
+
+export const MEDAL_COLORS = {
+  gold: { active: 'bg-yellow-500', inactive: 'bg-yellow-400' },
+  silver: { active: 'bg-gray-500', inactive: 'bg-gray-400' },
+  bronze: { active: 'bg-yellow-900', inactive: 'bg-yellow-800' },
+} as const;
