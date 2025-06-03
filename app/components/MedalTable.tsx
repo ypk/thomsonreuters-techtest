@@ -50,12 +50,16 @@ export function MedalTable({
                 sortType={undefined}
                 currentSort={currentSort}
                 onSortChange={onSortChange}
-              ></TableHeader>
+              >
+                &nbsp;
+              </TableHeader>
               <TableHeader
                 sortType={undefined}
                 currentSort={currentSort}
                 onSortChange={onSortChange}
-              ></TableHeader>
+              >
+                &nbsp;
+              </TableHeader>
               <TableHeader
                 sortType="gold"
                 currentSort={currentSort}
