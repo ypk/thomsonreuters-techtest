@@ -26,7 +26,7 @@ export function useUrlParams() {
    */
   const currentSort = useCallback((): SortType => {
     const sort = searchParams.get('sort') as SortType;
-    return VALID_SORTS.includes(sort) ? sort : 'total';
+    return VALID_SORTS.includes(sort) ? sort : 'gold';
   }, [searchParams]);
 
   /**

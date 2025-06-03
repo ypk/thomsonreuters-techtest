@@ -31,7 +31,7 @@ describe('useUrlParams', () => {
 
     const { result } = renderHook(() => useUrlParams());
 
-    expect(result.current.currentSort).toBe('total');
+    expect(result.current.currentSort).toBe('gold');
   });
 
   it('returns valid sort from params', () => {
@@ -53,7 +53,7 @@ describe('useUrlParams', () => {
 
     const { result } = renderHook(() => useUrlParams());
 
-    expect(result.current.currentSort).toBe('total');
+    expect(result.current.currentSort).toBe('gold');
   });
 
   it('updates sort parameter', () => {
